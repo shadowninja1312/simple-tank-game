@@ -18,10 +18,10 @@ DARK_BLUE = (31 , 37 , 57)
 
 BORDER = pygame.Rect(WIDTH//2 - 5, 0, 10, HEIGHT)
 
-BULLET_HIT_SOUND = pygame.mixer.Sound('/home/linus/TANK_ASSETS/Grenade+1.mp3')
-BULLET_FIRE_SOUND = pygame.mixer.Sound('/home/linus/TANK_ASSETS/Gun+Silencer.mp3')
-EXPLOSION_SOUND = pygame.mixer.Sound('/home/linus/TANK_ASSETS/explosion.mp3')
-DROPPING_SOUND = pygame.mixer.Sound('/home/linus/TANK_ASSETS/falling.mp3')
+BULLET_HIT_SOUND = pygame.mixer.Sound('TANK_ASSETS/Grenade+1.mp3')
+BULLET_FIRE_SOUND = pygame.mixer.Sound('TANK_ASSETS/Gun+Silencer.mp3')
+EXPLOSION_SOUND = pygame.mixer.Sound('TANK_ASSETS/explosion.mp3')
+DROPPING_SOUND = pygame.mixer.Sound('TANK_ASSETS/falling.mp3')
 
 HEALTH_FONT = pygame.font.SysFont('comicsans', 40)
 WINNER_FONT = pygame.font.SysFont('comicsans', 100)
@@ -39,7 +39,7 @@ LEFT_HIT = pygame.USEREVENT + 2
 RIGHT_HEAD_SHOT = pygame.USEREVENT + 3
 LEFT_HEAD_SHOT = pygame.USEREVENT + 4
 
-RIGHT_TANK_IMAGE = pygame.image.load(os.path.join('/home/linus/TANK_ASSETS', 'tank.png'))
+RIGHT_TANK_IMAGE = pygame.image.load(os.path.join('TANK_ASSETS', 'tank.png'))
 RIGHT_TANK = pygame.transform.rotate(pygame.transform.scale(RIGHT_TANK_IMAGE, (TANK_WIDTH, TANK_HEIGHT)), 360)
 RIGHT_TANK = pygame.transform.flip(RIGHT_TANK,True,False)
 
@@ -54,15 +54,15 @@ RIGHTmissile = pygame.image.load(os.path.join('/home/linus/TANK_ASSETS', 'missil
 RIGHTmissile = pygame.transform.rotate(pygame.transform.scale(RIGHTmissile, (100, 50)), 0)
 RIGHTmissile = pygame.transform.flip(RIGHTmissile,True,False)
 
-LEFT_BARREL = pygame.image.load(os.path.join('/home/linus/TANK_ASSETS' , 'barrel.jpg'))
+LEFT_BARREL = pygame.image.load(os.path.join('TANK_ASSETS' , 'barrel.jpg'))
 LEFT_BARREL = pygame.transform.scale(LEFT_BARREL , (80,16))
-RIGHT_BARREL = pygame.image.load(os.path.join('/home/linus/TANK_ASSETS' , 'barrel.jpg'))
+RIGHT_BARREL = pygame.image.load(os.path.join('TANK_ASSETS' , 'barrel.jpg'))
 RIGHT_BARREL = pygame.transform.flip(RIGHT_BARREL , False,False)
 RIGHT_BARREL = pygame.transform.scale(RIGHT_BARREL ,(80,16) )
 
-background = pygame.transform.scale(pygame.image.load(os.path.join('/home/linus/TANK_ASSETS', 'background.jpeg')), (WIDTH, HEIGHT))
+background = pygame.transform.scale(pygame.image.load(os.path.join('TANK_ASSETS', 'background.jpeg')), (WIDTH, HEIGHT))
 
-explosion = pygame.image.load(os.path.join('/home/linus/TANK_ASSETS', 'explosion.png'))
+explosion = pygame.image.load(os.path.join('TANK_ASSETS', 'explosion.png'))
 explosion = pygame.transform.rotate(pygame.transform.scale(
     explosion, (200, 150)), 0)
 
